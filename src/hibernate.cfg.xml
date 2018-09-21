@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="hbm2ddl.auto">update</property>
+          <!--  mysql url -->
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.0.11:3306/pradeep</property>
+        <property name="hibernate.connection.username">devuser</property>
+        <property name="hibernate.connection.password">de8B9#A9</property>
+        <property name="hibernate.connection.pool_size">100</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        
+        
+          <!-- enabling secondlevel cache -->
+       <!--  <property name="hibernate.cache.use_second_level_cache">true</property>
+  		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+         -->
+        
+        
+        <property name="hibernate.show_sql">true</property>
+        <property name="current_session_context_class">thread</property>
+        
+     <!--   <mapping class="com.pradeep.hibernatefull.entity.OneToOneRealation"/>
+        <mapping class="com.pradeep.hibernatefull.entity.Vechile"/> 
+        
+        <mapping class="com.pradeep.hibernatefull.entity.MappedbyManyToMany"/>
+        <mapping class="com.pradeep.hibernatefull.entity.AllVechile"/>
+         -->
+        
+<!--         <mapping class="com.pradeep.hibernatefull.entity.CascadeTypes"/>
+        <mapping class="com.pradeep.hibernatefull.entity.CascadeVechile"/>
+        
+         -->
+        
+        
+      <!--   <mapping class="com.pradeep.hibernatefull.entity.InheritenceVechile"/>
+        <mapping class="com.pradeep.hibernatefull.entity.InhertenceTwowheller"/>
+        
+        <mapping class="com.pradeep.hibernatefull.entity.InheritanceFourWheller"/> -->
+        
+        
+
+    </session-factory>
+</hibernate-configuration>
